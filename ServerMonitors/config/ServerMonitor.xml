@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<ServerMonitorConfig>
+
+    <startWebServer>true</startWebServer>
+    <webServerHost>0.0.0.0</webServerHost>
+    <webServerPort>8000</webServerPort>
+
+    <serviceStatusInterval>15</serviceStatusInterval>
+    <serviceStatusNotifyOnChangeOnly>true</serviceStatusNotifyOnChangeOnly>
+
+    <nodeMaster>True</nodeMaster>
+    <nodeName>ServerMonitor</nodeName>
+    <nodePort>9620</nodePort>
+    <nodeHost>127.0.0.1</nodeHost>
+    <nodeSendLiveMessageInterval>15</nodeSendLiveMessageInterval>
+    <nodeNotifyOnServiceChangeOnly>True</nodeNotifyOnServiceChangeOnly>
+    <nodeNotifyOnNodeChangeOnly>true</nodeNotifyOnNodeChangeOnly>
+    <nodeAutodetectNodes>true</nodeAutodetectNodes>
+
+</ServerMonitorConfig>
