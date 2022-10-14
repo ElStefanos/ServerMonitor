@@ -9,4 +9,6 @@
 
     $nodeManager = new NodeManager($socketManager->CreateSocket(), $config);
 
+    $nodeManager->CheckLive();
+
 ?>

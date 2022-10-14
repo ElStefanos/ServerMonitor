@@ -12,7 +12,7 @@
     <nodeMaster>True</nodeMaster>
     <nodeName>ServerMonitor</nodeName>
     <nodePort>9620</nodePort>
-    <nodeHost>127.0.0.1</nodeHost>
+    <nodeHost>localhost</nodeHost>
     <nodeSendLiveMessageInterval>15</nodeSendLiveMessageInterval>
     <nodeNotifyOnServiceChangeOnly>True</nodeNotifyOnServiceChangeOnly>
     <nodeNotifyOnNodeChangeOnly>true</nodeNotifyOnNodeChangeOnly>

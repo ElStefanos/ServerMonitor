@@ -3,8 +3,8 @@
 
     namespace network;
 
-    class NodeManager {
-        private int $socket;
+    class NodeManager  {
+        private $socket;
         private array $ip;
         private string $nodetype;
         private int $interval;
@@ -40,8 +40,12 @@
         }
 
         public function CheckLive() {
-            if ($this->change == "false") {
-                
+            if ($this->change == "true") {
+                while (true) {
+                    if (socket_listen($this->socket, 500) === false) {
+                        echo "\033[31m [ERROR] socket_listen() failed: reason: " . socket_strerror(socket_last_error($this->socket)) . "\n\033[0m";
+                    } 
+                }
             }
         }
     }

@@ -45,8 +45,9 @@
     }}
 
     $jellyfin = array('name' => 'Jellyfin', 'host' => '127.0.0.1', 'port' => '9620', 'last' => null);
+    $node = array('name' => 'TEST', 'host' => '192.168.1.20', 'port' => '9620', 'last' => null);
     $appache = array('name' => 'appache', 'host' => '192.168.1.24', 'port' => '80', 'last' => null);
     $nas = array('name' => 'FreeNas', 'host' => '192.168.1.86', 'port' => '80',  'last' => null);
-    $list = array($jellyfin['name'] => $jellyfin, $appache['name'] => $appache, $nas['name'] => $nas);
+    $list = array($node['name'] => $node, $jellyfin['name'] => $jellyfin, $appache['name'] => $appache, $nas['name'] => $nas);
     
     GetStatus($interval, $notifyOnChange, $list);
